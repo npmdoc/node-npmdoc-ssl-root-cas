@@ -1,0 +1,3146 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/coolaj86/node-ssl-root-cas">ssl-root-cas (v1.2.3)</a>
+</h1>
+<h4>The module you need to solve node's SSL woes when including a custom certificate.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ssl-root-cas">module ssl-root-cas</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssl-root-cas.addFile">
+            function <span class="apidocSignatureSpan">ssl-root-cas.</span>addFile
+            <span class="apidocSignatureSpan">(filepath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssl-root-cas.create">
+            function <span class="apidocSignatureSpan">ssl-root-cas.</span>create
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssl-root-cas.inject">
+            function <span class="apidocSignatureSpan">ssl-root-cas.</span>inject
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssl-root-cas.</span>ca_store_generator</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssl-root-cas.</span>rootCas</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>0</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>1</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>10</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>100</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>101</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>102</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>103</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>104</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>105</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>106</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>107</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>108</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>109</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>11</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>110</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>111</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>112</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>113</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>114</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>115</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>116</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>117</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>118</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>119</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>12</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>120</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>121</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>122</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>123</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>124</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>125</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>126</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>127</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>128</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>129</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>13</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>130</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>131</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>132</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>133</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>134</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>135</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>136</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>137</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>138</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>139</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>14</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>140</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>141</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>142</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>143</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>144</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>145</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>146</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>147</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>148</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>149</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>15</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>150</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>151</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>152</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>153</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>154</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>155</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>156</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>157</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>158</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>159</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>16</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>160</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>161</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>162</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>163</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>164</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>165</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>17</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>18</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>19</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>2</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>20</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>21</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>22</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>23</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>24</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>25</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>26</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>27</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>28</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>29</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>3</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>30</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>31</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>32</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>33</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>34</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>35</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>36</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>37</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>38</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>39</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>4</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>40</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>41</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>42</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>43</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>44</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>45</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>46</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>47</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>48</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>49</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>5</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>50</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>51</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>52</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>53</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>54</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>55</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>56</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>57</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>58</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>59</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>6</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>60</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>61</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>62</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>63</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>64</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>65</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>66</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>67</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>68</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>69</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>7</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>70</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>71</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>72</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>73</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>74</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>75</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>76</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>77</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>78</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>79</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>8</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>80</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>81</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>82</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>83</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>84</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>85</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>86</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>87</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>88</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>89</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>9</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>90</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>91</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>92</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>93</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>94</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>95</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>96</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>97</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>98</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.</span>99</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ssl-root-cas.ca_store_generator">module ssl-root-cas.ca_store_generator</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssl-root-cas.ca_store_generator.generate">
+            function <span class="apidocSignatureSpan">ssl-root-cas.ca_store_generator.</span>generate
+            <span class="apidocSignatureSpan">(filename)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ssl-root-cas.rootCas">module ssl-root-cas.rootCas</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssl-root-cas.rootCas.addFile">
+            function <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>addFile
+            <span class="apidocSignatureSpan">(filepath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssl-root-cas.rootCas.create">
+            function <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>create
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssl-root-cas.rootCas.inject">
+            function <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>inject
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssl-root-cas.</span>rootCas</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>0</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>1</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>10</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>100</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>101</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>102</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>103</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>104</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>105</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>106</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>107</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>108</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>109</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>11</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>110</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>111</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>112</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>113</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>114</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>115</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>116</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>117</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>118</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>119</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>12</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>120</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>121</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>122</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>123</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>124</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>125</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>126</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>127</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>128</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>129</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>13</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>130</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>131</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>132</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>133</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>134</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>135</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>136</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>137</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>138</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>139</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>14</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>140</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>141</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>142</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>143</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>144</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>145</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>146</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>147</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>148</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>149</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>15</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>150</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>151</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>152</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>153</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>154</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>155</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>156</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>157</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>158</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>159</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>16</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>160</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>161</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>162</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>163</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>164</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>165</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>17</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>18</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>19</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>2</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>20</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>21</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>22</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>23</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>24</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>25</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>26</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>27</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>28</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>29</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>3</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>30</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>31</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>32</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>33</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>34</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>35</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>36</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>37</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>38</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>39</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>4</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>40</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>41</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>42</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>43</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>44</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>45</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>46</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>47</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>48</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>49</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>5</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>50</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>51</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>52</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>53</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>54</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>55</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>56</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>57</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>58</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>59</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>6</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>60</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>61</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>62</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>63</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>64</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>65</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>66</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>67</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>68</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>69</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>7</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>70</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>71</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>72</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>73</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>74</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>75</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>76</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>77</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>78</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>79</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>8</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>80</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>81</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>82</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>83</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>84</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>85</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>86</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>87</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>88</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>89</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>9</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>90</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>91</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>92</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>93</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>94</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>95</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>96</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>97</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>98</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>99</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ssl-root-cas" id="apidoc.module.ssl-root-cas">module ssl-root-cas</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ssl-root-cas.addFile" id="apidoc.element.ssl-root-cas.addFile">
+        function <span class="apidocSignatureSpan">ssl-root-cas.</span>addFile
+        <span class="apidocSignatureSpan">(filepath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addFile = function (filepath) {
+  // BEGIN TODO
+  // What is this filepath stuff all about?
+  // (maybe be a leftover MS Windows hack ??)
+  // Can we get rid of it?
+  var path = require('path');
+  var root = (filepath[0] === '/' ? '/' : '');
+  var filepaths = filepath.split(/\//g);
+  if (root) { filepaths.unshift(root); }
+  filepath = path.join.apply(null, filepaths);
+  // END TODO
+
+  var httpsOpts = require('https').globalAgent.options;
+  var rootCas = this || module.exports.rootCas;
+  var buf = require('fs').readFileSync(filepath);
+  rootCas.push(buf);
+  // backwards compat
+  if (rootCas !== httpsOpts.ca) {
+    httpsOpts.ca = httpsOpts.ca || [];
+    httpsOpts.ca.push(buf);
+  }
+  return rootCas;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+because you're testing against a self-signed or company-issued certificate.
+
+Follow the instructions above, but also use `addFile`, like this:
+
+```
+var rootCas = require('ssl-root-cas/latest').create();
+
+rootCas.<span class="apidocCodeKeywordSpan">addFile</span>(__dirname + '/ssl/00-company-root-ca.pem');
+```
+
+### unable to verify the first certificate
+
+`unable to verify the first certificate`
+
+When you get this error it means that the webserver you are connecting to
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssl-root-cas.create" id="apidoc.element.ssl-root-cas.create">
+        function <span class="apidocSignatureSpan">ssl-root-cas.</span>create
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function () {
+  var rootCas = originalCas.slice(0);
+
+  rootCas.inject = module.exports.inject;
+  rootCas.addFile = module.exports.addFile;
+
+  return rootCas;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Usage
+=====
+
+General usage:
+
+```js
+'use strict';
+var rootCas = require('ssl-root-cas/latest').<span class="apidocCodeKeywordSpan">create</span>();
+
+// default for all https requests
+// (whether using https directly, request, or another module)
+require('https').globalAgent.options.ca = rootCas;
+```
+
+### CERT_UNTRUSTED
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssl-root-cas.inject" id="apidoc.element.ssl-root-cas.inject">
+        function <span class="apidocSignatureSpan">ssl-root-cas.</span>inject
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inject = function () {
+  var rootCas = this || module.exports.rootCas;
+  var opts = /*context ||*/ require('https').globalAgent.options;
+  if (!opts.ca || !opts.ca.__injected) { opts.ca = (opts.ca||[]).concat(rootCas); }
+  opts.ca.__injected = true;
+  return rootCas;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var express = require('express');
+var app = express();
+var sslOptions;
+var server;
+var port = 4080;
+
+require('ssl-root-cas/latest')
+.<span class="apidocCodeKeywordSpan">inject</span>()
+.addFile(__dirname + '/ssl/Geotrust Cross Root CA.txt')
+// NOTE: intermediate certificates should be bundled with
+// the site's certificate, which is issued by the server
+// when you connect. You only need to add them here if the
+// server is misconfigured and you can't change it
+//.addFile(__dirname + '/ssl/Rapid SSL CA.txt')
+;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ssl-root-cas.ca_store_generator" id="apidoc.module.ssl-root-cas.ca_store_generator">module ssl-root-cas.ca_store_generator</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ssl-root-cas.ca_store_generator.generate" id="apidoc.element.ssl-root-cas.ca_store_generator.generate">
+        function <span class="apidocSignatureSpan">ssl-root-cas.ca_store_generator.</span>generate
+        <span class="apidocSignatureSpan">(filename)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function run(filename) {
+  var PromiseA = require('bluebird').Promise;
+
+  return new PromiseA(function (resolve, reject) {
+    if (!filename) {
+      console.error("Error: No file specified");
+      console.info("Usage: %s &lt;outputfile&gt;", process.argv[1]);
+      console.info("   where &lt;outputfile&gt; is the name of the file to write to, relative to %s", process.argv[1]);
+      console.info("Note that a 'pems/' directory will also be created at the same location as the &lt;outputfile&gt;, containing individual
+ .pem files.");
+      reject(3);
+      return;
+    }
+
+    // main (combined) output file location, relative to this script's location
+    outputFile = path.resolve(__dirname, filename);
+
+    // pems/ output directory, in the same directory as the outputFile
+    outputPemsDir = path.resolve(outputFile, '../pems');
+
+    if (!fs.existsSync(outputPemsDir)) {
+      fs.mkdirSync(outputPemsDir);
+    }
+
+    console.info("Loading latest certificates from " + CERTDB_URL);
+    request.get(CERTDB_URL, function (error, response, body) {
+      if (error) {
+        console.error(error);
+        console.error(error.stacktrace);
+        reject({ code: 1, error: error });
+        return;
+      }
+
+      if (response.statusCode !== 200) {
+        console.error("Fetching failed with status code %s", response.statusCode);
+        reject({ code: 2, error: "Fetching failed with status code " + response.statusCode });
+        return;
+      }
+
+      if (response.headers['content-type'].indexOf('text/plain') !== 0) {
+        console.error("Fetching failed with incorrect content type %s", response.headers['content-type']);
+        reject({ code: 2, error: "Fetching failed with incorrect content type " + response.headers['content-type'] });
+        return;
+      }
+
+      var lines = body.split("\n")
+        , certs = parseCertData(lines)
+        , pemsFile = path.join(outputPemsDir, 'mozilla-certdata.txt')
+        ;
+
+      fs.writeFileSync(pemsFile, body);
+      dumpCerts(certs, outputFile, outputPemsDir);
+
+      resolve();
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ssl-root-cas.rootCas" id="apidoc.module.ssl-root-cas.rootCas">module ssl-root-cas.rootCas</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ssl-root-cas.rootCas.addFile" id="apidoc.element.ssl-root-cas.rootCas.addFile">
+        function <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>addFile
+        <span class="apidocSignatureSpan">(filepath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addFile = function (filepath) {
+  // BEGIN TODO
+  // What is this filepath stuff all about?
+  // (maybe be a leftover MS Windows hack ??)
+  // Can we get rid of it?
+  var path = require('path');
+  var root = (filepath[0] === '/' ? '/' : '');
+  var filepaths = filepath.split(/\//g);
+  if (root) { filepaths.unshift(root); }
+  filepath = path.join.apply(null, filepaths);
+  // END TODO
+
+  var httpsOpts = require('https').globalAgent.options;
+  var rootCas = this || module.exports.rootCas;
+  var buf = require('fs').readFileSync(filepath);
+  rootCas.push(buf);
+  // backwards compat
+  if (rootCas !== httpsOpts.ca) {
+    httpsOpts.ca = httpsOpts.ca || [];
+    httpsOpts.ca.push(buf);
+  }
+  return rootCas;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+because you're testing against a self-signed or company-issued certificate.
+
+Follow the instructions above, but also use `addFile`, like this:
+
+```
+var rootCas = require('ssl-root-cas/latest').create();
+
+rootCas.<span class="apidocCodeKeywordSpan">addFile</span>(__dirname + '/ssl/00-company-root-ca.pem');
+```
+
+### unable to verify the first certificate
+
+`unable to verify the first certificate`
+
+When you get this error it means that the webserver you are connecting to
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssl-root-cas.rootCas.create" id="apidoc.element.ssl-root-cas.rootCas.create">
+        function <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>create
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function () {
+  var rootCas = originalCas.slice(0);
+
+  rootCas.inject = module.exports.inject;
+  rootCas.addFile = module.exports.addFile;
+
+  return rootCas;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Usage
+=====
+
+General usage:
+
+```js
+'use strict';
+var rootCas = require('ssl-root-cas/latest').<span class="apidocCodeKeywordSpan">create</span>();
+
+// default for all https requests
+// (whether using https directly, request, or another module)
+require('https').globalAgent.options.ca = rootCas;
+```
+
+### CERT_UNTRUSTED
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssl-root-cas.rootCas.inject" id="apidoc.element.ssl-root-cas.rootCas.inject">
+        function <span class="apidocSignatureSpan">ssl-root-cas.rootCas.</span>inject
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inject = function () {
+  var rootCas = this || module.exports.rootCas;
+  var opts = /*context ||*/ require('https').globalAgent.options;
+  if (!opts.ca || !opts.ca.__injected) { opts.ca = (opts.ca||[]).concat(rootCas); }
+  opts.ca.__injected = true;
+  return rootCas;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var express = require('express');
+var app = express();
+var sslOptions;
+var server;
+var port = 4080;
+
+require('ssl-root-cas/latest')
+.<span class="apidocCodeKeywordSpan">inject</span>()
+.addFile(__dirname + '/ssl/Geotrust Cross Root CA.txt')
+// NOTE: intermediate certificates should be bundled with
+// the site's certificate, which is issued by the server
+// when you connect. You only need to add them here if the
+// server is misconfigured and you can't change it
+//.addFile(__dirname + '/ssl/Rapid SSL CA.txt')
+;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
